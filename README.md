@@ -24,4 +24,4 @@ The `api` project is a server built with Express and TypeScript, while the `app`
 
 ## Usage
 
-See in respective REAMDE.md
+See in respective README.md
