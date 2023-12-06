@@ -47,8 +47,7 @@ function HomePage() {
   return (
     <Layout>
       <Breadcrumbs aria-label="breadcrumb">
-        <Link to="/">Home</Link>
-        <Typography color="text.primary">Results</Typography>
+        <Typography color="text.primary">Home</Typography>
       </Breadcrumbs>
       <Container>
         <Grid container spacing={3}>
