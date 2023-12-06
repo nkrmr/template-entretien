@@ -27,11 +27,11 @@ function StartupPage() {
         const foundStartup = response.data.find(
           (s: StartupData) => s.metadata.slug === slug
         );
-        setStartup(foundStartup); // Set the found startup directly
+        setStartup(foundStartup);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        setError("Failed to fetch data. Please try again later."); // Set error message
+        setError("Failed to fetch data. Please try again later.");
       });
   }, [slug]);
 
