@@ -63,15 +63,14 @@ function StartupPage() {
           <Typography gutterBottom variant="h5" component="div">
             {startup.metadata.title}
           </Typography>
-          <Chip
-            label={
-              startup.metadata.status
-                ? startup.metadata.status.toUpperCase()
-                : "UNKNOWN"
-            }
-            color={startup.metadata.status === "up" ? "success" : "error"}
-            sx={{ mb: 2 }}
-          />
+          {startup.metadata.status && (
+            <Chip
+              label={startup.metadata.status.toUpperCase()}
+              color={startup.metadata.status === "up" ? "success" : "error"}
+              sx={{ mb: 2 }}
+            />
+          )}
+
           <Typography variant="body2" color="text.secondary">
             {startup.metadata.mission}
           </Typography>
