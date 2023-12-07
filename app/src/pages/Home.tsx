@@ -22,7 +22,7 @@ function HomePage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/cfas-sheet")
+      .get("http://localhost:8080/api/startups")
       .then((response) => {
         setStartUps(response.data);
       })

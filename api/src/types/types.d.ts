@@ -28,3 +28,19 @@ interface SummaryItem {
   url: string;
   status: string;
 }
+
+interface Phase {
+  name: string;
+  start: string;
+  end?: string;
+}
+
+interface StartupMetadata {
+  title: string;
+  mission: string;
+  link: string;
+  incubator: string;
+  phases: Phase[];
+  status: string | null;
+  slug: string;
+}
